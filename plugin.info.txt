@@ -1,0 +1,7 @@
+base   tabbedsearchresults
+author Michael Große
+email  dokuwiki@cosmocode.de
+date   2016-07-06
+name   tabbedsearchresults plugin
+desc   Show the categories of search results as tabs
+url    https://dokuwiki.org/plugin:tabbedsearchresults
