@@ -1,6 +1,6 @@
 jQuery(function () {
     'use strict';
-    if (!jQuery('div#dokuwiki__top.mode_search').length) {
+    if (!(jQuery('div#dokuwiki__top.mode_search').length || jQuery('div#icke__wrapper.act_search').length)) {
         return;
     }
 
@@ -38,5 +38,5 @@ jQuery(function () {
         }));
         $tabs.append($li);
     });
-    jQuery('#dokuwiki__content h2').first().after($tabs);
+    jQuery('#dokuwiki__content, #icke__page').find('h2').first().after($tabs);
 });
