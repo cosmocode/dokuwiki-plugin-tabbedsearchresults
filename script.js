@@ -25,6 +25,9 @@ jQuery(function () {
         var $elem = jQuery(elem);
         var numResults = $elem.find('ul.search_quickhits > li').length;
         var title = $elem.find('h3').text();
+        if (title.substr(title.length - 1) == ':') {
+            title = title.substr(0, title.length - 1);
+        }
         $elem.find('h3').hide();
         var $li = jQuery('<li></li>').append(jQuery('<a>'+title+ ' (' + numResults + ')</a>').click(function (evt) {
             $quickresults.hide();
@@ -35,5 +38,5 @@ jQuery(function () {
         }));
         $tabs.append($li);
     });
-    jQuery('#results').after($tabs);
+    jQuery('#dokuwiki__content h2').first().after($tabs);
 });
