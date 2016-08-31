@@ -5,7 +5,7 @@
  * @author Michael Große <dokuwiki@cosmocode.de>
  */
 
-$lang['js']['tab:Page Results'] = 'Page Results';
+$lang['js']['tab:Page Results'] = 'Page fulltext results';
 
 
 
